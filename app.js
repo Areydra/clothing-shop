@@ -2,7 +2,7 @@ require('dotenv/config') //memanggil package dotenv(agar bisa menggunakan file .
 const express       = require('express') //memanggil package express js untuk server nya
 const logger        = require('morgan') //morgan = package untuk menampilkan log di dalam terminal(pakai saat mode developer saja)
 const bodyParser    = require('body-parser') //untuk mengambil data dari form / postman
-const router        = require('./routes/index') //router/index.js adalah perkumpulan dari beberapa file route
+const router        = require('./src/Routes/index') //router/index.js adalah perkumpulan dari beberapa file route
 
 const app       = express()
 const port      = process.env.PORT || 8080 //Gunakan port dari file .env jika tidak ada gunakan 8080
@@ -16,5 +16,6 @@ app.listen(port, () => {
 app.use(logger('dev')) //menampilkan logger diterminal setiap kali menjalankan function
 app.use(bodyParser.json()) //menggunakan tipe json dalam bodyParser
 app.use(bodyParser.urlencoded({extended : false})) //false hanya bisa memberi tipe string/array jika true digunakan untuk menggunakan nested object
+app.use(router)
 
-router(app) //menjalankan router dengan paramete app(express)
+// router(app) //menjalankan router dengan paramete app(express)
