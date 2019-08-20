@@ -1,0 +1,2 @@
+untuk penjelasan mvc liat di bagian branch dari routes, controller, model
+dan routes/index.js
