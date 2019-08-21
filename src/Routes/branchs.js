@@ -7,7 +7,7 @@ const router = express.Router()
 router.get('/', branchs.getBranchs) // ('/branchs')
 router.get('/:id', branchs.getBranchsById) // ('/branchs/:id')
 router.post('/', branchs.postBranch) // ('/branchs')
-router.patch('/:id', branchs.patchBranch) // ('/branch/:id/update')
-router.delete('/:id', branchs.deleteBranch) //('/branch/:id/delete')
+router.patch('/:id', branchs.patchBranch) // ('/branch/:id')
+router.delete('/:id', branchs.deleteBranch) //('/branch/:id')
 
 module.exports = router
