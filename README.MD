@@ -1,6 +1,6 @@
 # REST Clothing Shop
 
-### Create Database like this
+### Create Database and three table like this
 ![Image](https://i.imgur.com/dvs2olH.png)
 
 ### How to install
