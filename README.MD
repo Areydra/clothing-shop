@@ -1,5 +1,8 @@
 # REST Clothing Shop
 
+### Create Database like this
+![Image](https://i.imgur.com/dvs2olH.png)
+
 ### How to install
 1. Set configuration at .env. U can use (.env.exampe) and remove .example 
 2. Open terminal / command prompt
