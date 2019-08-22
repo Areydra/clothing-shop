@@ -1,9 +1,9 @@
 module.exports = {
-    formResponse : (res, status, response) => {
-        const formResponse = {
+    success : (res, status, response) => {
+        const success = {
             status : status,
             data : response
         }
-        res.json(formResponse)
+        res.json(success)
     }
 }

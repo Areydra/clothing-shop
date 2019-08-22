@@ -4,7 +4,7 @@ const formResponse = require('../Helpers/formResponse')
 module.exports = {
     getTypes : (req, res) => {
         types.getTypes().then(result => {
-            formResponse.formResponse(res, 200, result)
+            formResponse.success(res, 200, result)
         }).catch(err => {
             console.log(err)
         })
@@ -12,7 +12,7 @@ module.exports = {
 
     getTypeById : (req, res) => {
         types.getTypeById(req.params.id).then(result => {
-            formResponse.formResponse(res, 200, result)
+            formResponse.success(res, 200, result)
         }).catch(err => {
             console.log(err)
         })
@@ -20,7 +20,7 @@ module.exports = {
 
     postType: (req, res) => {
         types.postType(req.body).then(result => {
-            formResponse.formResponse(res, 200, result)
+            formResponse.success(res, 200, result)
         }).catch(err => {
             console.log(err)
         })
@@ -28,7 +28,7 @@ module.exports = {
 
     patchType: (req,res) => {
         types.patchType(req.body, req.params.id).then(result => {
-            formResponse.formResponse(res, 200, result)
+            formResponse.success(res, 200, result)
         }).catch(err => {
             console.log(err)
         })
@@ -36,7 +36,7 @@ module.exports = {
 
     deleteType: (req, res) => {
         types.deleteType(req.params.id).then(result => {
-            formResponse.formResponse(res, 200, result)
+            formResponse.success(res, 200, result)
         }).catch(err => {
             console.log(err)
         })

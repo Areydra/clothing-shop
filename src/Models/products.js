@@ -58,14 +58,6 @@ module.exports = {
         })
     },
 
-    getProductsByQty : (qty) => {
-        return new Promise((resolve, reject) => {
-            db.query(`${query} WHERE products.quantitity=?`, [qty], (error, response) => {
-                (!error) ? resolve(response) : reject(error)
-            })
-        })
-    },
-
     getProductsPage : (page) => {
         return new Promise((resolve, reject) => {
             let limit = 5

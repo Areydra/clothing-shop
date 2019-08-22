@@ -24,5 +24,4 @@
 3. /products/:name for get products data by name
 4. /products/branch/:name for get products data by branch
 5. /products/type/:name for get products data by type
-6. /products/qty/:qty for get products data by quantitity(qty)
-7. /products/page/:page for get products data by page/limit per page with 5 data
+6. /products/page/:page for get products data by page/limit per page with 5 data
